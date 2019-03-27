@@ -27,7 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BF237AC7E189986C65BD51C3BA1B944 /* Pods_SimpleCustomizableTextView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SimpleCustomizableTextView_Example.framework; path = "Pods-SimpleCustomizableTextView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BF237AC7E189986C65BD51C3BA1B944 /* Pods_SimpleCustomizableTextView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleCustomizableTextView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E2BBE8A91471B8CF7FA09E860C2BF0C /* Pods-SimpleCustomizableTextView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleCustomizableTextView_Example-dummy.m"; sourceTree = "<group>"; };
 		14C645D88C1F694FAECEEBDD99B25B3F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A20176293BCC745BD4FCE0F61667C88 /* Pods-SimpleCustomizableTextView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleCustomizableTextView_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -41,13 +41,13 @@
 		6E2E082A157109C472F56835BF4DC4F7 /* SimpleCustomizableTextView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleCustomizableTextView-dummy.m"; sourceTree = "<group>"; };
 		70015C095232F31C588EC4AF0DE4CB6E /* SimpleCustomizableTextView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleCustomizableTextView-umbrella.h"; sourceTree = "<group>"; };
 		72FB79CD5F1B582A208A46EC77A5C02F /* Pods-SimpleCustomizableTextView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleCustomizableTextView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		968AF906712ECE537F42C6579A4603D3 /* SimpleCustomizableTextView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SimpleCustomizableTextView.framework; path = SimpleCustomizableTextView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DBC19ED64821E246E2EE412A70A79E3 /* Pods-SimpleCustomizableTextView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SimpleCustomizableTextView_Example.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		968AF906712ECE537F42C6579A4603D3 /* SimpleCustomizableTextView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleCustomizableTextView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DBC19ED64821E246E2EE412A70A79E3 /* Pods-SimpleCustomizableTextView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SimpleCustomizableTextView_Example.modulemap"; sourceTree = "<group>"; };
 		BCEAEEBD20F4E4EDE9CE951E3CCFCA79 /* SimpleCustomizableTextView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleCustomizableTextView-prefix.pch"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D3B9D71EE6760296A9D9DBF6A0CC1613 /* Pods-SimpleCustomizableTextView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SimpleCustomizableTextView_Example-resources.sh"; sourceTree = "<group>"; };
-		F719C4959FAAE15D4556335BC27AB5F7 /* SimpleCustomizableTextView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SimpleCustomizableTextView.modulemap; sourceTree = "<group>"; };
+		F719C4959FAAE15D4556335BC27AB5F7 /* SimpleCustomizableTextView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SimpleCustomizableTextView.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,6 @@
 			children = (
 				181507EF364FD7AEB7B47BFA16EA5A2D /* Classes */,
 			);
-			name = SimpleCustomizableTextView;
 			path = SimpleCustomizableTextView;
 			sourceTree = "<group>";
 		};
@@ -102,7 +101,6 @@
 			children = (
 				65B5C386375E327A67F54FBC4E296704 /* SimpleCustomizableTextView.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -247,6 +245,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					73EF5311DFE9D0CFC02EBAFC077C01BC = {
+						LastSwiftMigration = 1010;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -313,7 +316,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-SimpleCustomizableTextView_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SimpleCustomizableTextView_Example/Pods-SimpleCustomizableTextView_Example.modulemap";
@@ -326,7 +329,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -350,7 +353,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-SimpleCustomizableTextView_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SimpleCustomizableTextView_Example/Pods-SimpleCustomizableTextView_Example.modulemap";
@@ -362,7 +365,7 @@
 				PRODUCT_NAME = Pods_SimpleCustomizableTextView_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -404,6 +407,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -449,6 +453,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
@@ -478,7 +483,8 @@
 				PRODUCT_NAME = SimpleCustomizableTextView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -511,7 +517,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

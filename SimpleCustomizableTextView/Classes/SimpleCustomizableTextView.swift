@@ -115,8 +115,8 @@ public class SimpleCustomizableTextView: UITextView {
     
     @IBInspectable public var barItemTitleColor: UIColor = UIColor.black {
         didSet {
-            doneButton.setTitleTextAttributes([
-                NSForegroundColorAttributeName: barItemTitleColor, NSFontAttributeName: barItemTitleFont], for: .normal)
+            doneButton.setTitleTextAttributes(convertToOptionalNSAttributedStringKeyDictionary([
+                convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor): barItemTitleColor, convertFromNSAttributedStringKey(NSAttributedString.Key.font): barItemTitleFont]), for: .normal)
         }
     }
     
@@ -134,8 +134,8 @@ public class SimpleCustomizableTextView: UITextView {
         
     public var barItemTitleFont: UIFont = .systemFont(ofSize: UIFont.buttonFontSize) {
         didSet {
-            doneButton.setTitleTextAttributes([
-                NSFontAttributeName: barItemTitleFont, NSForegroundColorAttributeName: barItemTitleColor], for: .normal)
+            doneButton.setTitleTextAttributes(convertToOptionalNSAttributedStringKeyDictionary([
+                convertFromNSAttributedStringKey(NSAttributedString.Key.font): barItemTitleFont, convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor): barItemTitleColor]), for: .normal)
         }
     }
     
@@ -161,7 +161,7 @@ private extension SimpleCustomizableTextView {
     }
     
     func observeTextDidChange() {
-        notificatin.addObserver(self, selector: #selector(controlPlaceholder(_:)), name: .UITextViewTextDidChange, object: nil)
+        notificatin.addObserver(self, selector: #selector(controlPlaceholder(_:)), name: UITextView.textDidChangeNotification, object: nil)
     }
     
     func placeholderIsHidden() {
@@ -228,3 +228,14 @@ private extension SimpleCustomizableTextView {
 
 
 
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromNSAttributedStringKey(_ input: NSAttributedString.Key) -> String {
+	return input.rawValue
+}
